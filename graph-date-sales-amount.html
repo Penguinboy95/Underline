@@ -21,7 +21,9 @@
     <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+     <link href="assets/css/graphs-design.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/modernizr.min.js"></script>
+    <script src="plugins/chart.js/chart.min.js"></script>
 </head>
 
 <body>
@@ -226,7 +228,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="page-title-box">
-                                <h4 class="page-title">Статистика</h4>
+                                <h4 class="page-title">Продажи в количестве/Дата</h4>
                                 <ol class="breadcrumb p-0 m-0">
                                     <li>
                                         <a href="#">Codefox</a>
@@ -243,131 +245,37 @@
                         </div>
                     </div>
                     <!-- end row -->
+                    <!-- MAIN CONTENT -->
                     <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-primary">
-                              <a href="graph-date-sales-amount.html">
-                                <i class="mdi dripicons-blog widget-two-icon"></i>
-                                <div class="wigdet-two-content" onclick="#">
-                                    <p class="m-0 text-uppercase text-white font-600 font-secondary text-overflow" title="Stats1">Продаж за сегодня
-                                        <br> (кол-во)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">65841</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>10%</b> от предыдущего периода</p>
-                                </a>
-                                </div>
-                            </div>
+                        <div class="col-lg-4">
+                            <span>Выберите дату:</span>
                         </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-info">
-                            <a href="graph-date-sales-amount.html">
-                                <i class="mdi mdi-av-timer widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-white text-uppercase font-600 font-secondary text-overflow" title="User Stats2">Продаж с начала месяца
-                                        <br> (кол-во)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">52142</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>5.6%</b> от предыдущего периода</p>
-                                </div>
-                              </a>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-purple">
-                            <a href="graph-date-sales-money.html">
-                                <i class="mdi mdi-cash widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-uppercase text-white font-600 font-secondary text-overflow" title="Stats3">Продаж за сегодня
-                                        <br> (руб, вкл. НДС)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">2365</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>7.02%</b> от предыдущего периода</p>
-                                </div>
-                              </a>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-custom">
-                            <a href="graph-date-sales-money.html">
-                                <i class="mdi mdi-cash-multiple widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-white text-uppercase font-600 font-secondary text-overflow" title="Stats4">Продаж с начала месяца
-                                        <br> (руб, вкл. НДС)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">854</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>9.9%</b> от предыдущего периода</p>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-primary">
-                            <a href="graph-date-midcheck.html">
-                                <i class="mdi dripicons-document widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-uppercase text-white font-600 font-secondary text-overflow" title="Stats5">Средний чек за сегодня
-                                        <br> (руб, вкл. НДС)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">65841</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>10%</b> от предыдущего периода</p>
-                                </div>
-                              </a>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-info">
-                            <a href="graph-date-midcheck.html">
-                                <i class="fa fa-file-text widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-white text-uppercase font-600 font-secondary text-overflow" title="Stats6">Средний чек с начала месяца
-                                        <br> (руб, вкл. НДС)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">52142</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>5.6%</b> от предыдущего периода</p>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-purple">
-                                <i class="mdi mdi-timetable widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-uppercase text-white font-600 font-secondary text-overflow" title="Stats7">Количество товаров в продаже
-                                        <br> (кол-во)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">2365</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>7.02%</b> от предыдущего периода</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card-box widget-box-two widget-two-custom">
-                                <i class="mdi mdi-cash-100 widget-two-icon"></i>
-                                <div class="wigdet-two-content">
-                                    <p class="m-0 text-white text-uppercase font-600 font-secondary text-overflow" title="Stats8">Количество товаров в продаже
-                                        <br> (руб, вкл. НДС)</p>
-                                    <h2 class="text-white"><span data-plugin="counterup">854</span> <small><i class="mdi mdi-arrow-up text-white"></i></small></h2>
-                                    <p class="text-white m-0"><b>9.9%</b> от предыдущего периода</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="card-box">
-                                <h4 class="header-title m-t-0 m-b-30">Продажи по категориям</h4>
-                                <div class="">
-                                    <div id="pie-chart" class="ct-chart ct-golden-section dash-chart">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-lg-4">
+                            <span>Группировка:</span>
                         </div>
                     </div>
+                    
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-lg-4">
+                            <input type="text" id="reportrange" class="form-control">
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-primary">Дни</button>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-primary">Месяцы</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class ="col-lg-10 col-md-12">
+                            <div class="graph">
+                            <canvas id="statChart" style = ""></canvas>
+                            </div>
+                        </div>
+                         <div class="col-lg-1"></div>
+                    </div>
+
                     <!-- end row -->
                 </div>
                 <!-- container -->
@@ -398,12 +306,14 @@
     <!--Chartist Chart-->
     <script src="plugins/chartist/js/chartist.min.js"></script>
     <script src="plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+    <script src="plugins/chart.js/chart.min.js"></script>
     <!-- Dashboard init -->
     <script src="assets/pages/jquery.dashboard.js"></script>
     <!-- App js -->
     <script src="assets/js/jquery.core.js"></script>
     <script src="assets/js/jquery.app.js"></script>
-    <script src="plugins/chart.js/chart.min.js"></script>
+
+    <script src="assets/js/detailCharts.js"></script>
 </body>
 
 </html>
