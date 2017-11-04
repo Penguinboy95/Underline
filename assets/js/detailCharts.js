@@ -13,8 +13,8 @@ var myChart = new Chart(ctx, {
                 lineTension: 0.1,
                 pointBackgroundColor: 'black',
                 data: [7, 5, 3, 5, 2, 8],
-                borderWidth: 1,
-                borderColor: 'blue'
+                borderWidth: 2,
+                borderColor: 'black'
             }
         ]
     },
